@@ -2,19 +2,22 @@ import { PORTAL_LOGIN_URL, QUOTE_URL } from '../content.js'
 
 export default function Hero() {
   return (
-    <section id="top" className="bg-deepbg text-white">
-      <div className="mx-auto max-w-6xl px-6 py-28">
-        <p className="text-light uppercase tracking-widest text-sm">Global swag supply chain</p>
-        <h1 className="mt-4 text-4xl md:text-6xl font-bold leading-tight max-w-3xl">
-          Cyndi Global — Your Dedicated SWAG Team
+    <section id="top" className="bg-white text-stone-900">
+      <div className="mx-auto max-w-6xl px-6 py-28 md:py-36 text-center flex flex-col items-center">
+        <p className="text-xs uppercase tracking-[0.28em] text-stone-500">Global swag &amp; brand management</p>
+        <h1 className="mt-6 text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
+          Cyndi
         </h1>
-        <p className="mt-6 text-xl text-light max-w-2xl">
-          Luxury swag for brands, anywhere in the world. One global warehouse, door-to-door delivery to 200+ countries and regions.
+        <p className="mt-5 text-base md:text-lg text-stone-600 tracking-wide">
+          Empowering Brands. Engaging People.
         </p>
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a href={QUOTE_URL} className="rounded bg-accent px-6 py-3 font-semibold hover:bg-secondary">Get a quote</a>
-          <a href={PORTAL_LOGIN_URL} className="rounded border border-light px-6 py-3 font-semibold hover:bg-white/10">Portal login</a>
-        </div>
+        <p className="mt-8 text-sm md:text-base text-stone-500 max-w-2xl leading-relaxed">
+          Your dedicated product team — luxury swag, one global warehouse, and door-to-door delivery to 200+ countries and regions.
+        </p>
+        <a href={QUOTE_URL} className="mt-10 border border-stone-900 px-9 py-3.5 text-xs uppercase tracking-widest font-medium text-stone-900 hover:bg-stone-900 hover:text-white transition-colors">
+          Explore more &nbsp;→
+        </a>
+        <div className="mt-24 text-[10px] uppercase tracking-[0.3em] text-stone-400">Scroll</div>
       </div>
     </section>
   )

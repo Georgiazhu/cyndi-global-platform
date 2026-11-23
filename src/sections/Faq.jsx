@@ -7,8 +7,8 @@ export default function Faq() {
       <div className="divide-y divide-line">
         {faq.map((f) => (
           <details key={f.q} className="py-4">
-            <summary className="cursor-pointer font-semibold text-ink">{f.q}</summary>
-            <p className="mt-2 text-body">{f.a}</p>
+            <summary className="cursor-pointer text-base font-medium text-ink">{f.q}</summary>
+            <p className="mt-3 text-sm leading-relaxed text-body max-w-3xl">{f.a}</p>
           </details>
         ))}
       </div>

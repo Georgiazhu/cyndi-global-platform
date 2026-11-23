@@ -4,16 +4,16 @@ import { portalFeatures, PORTAL_LOGIN_URL } from '../content.js'
 export default function PortalTeaser() {
   return (
     <Section id="portal" title="Everything your brand needs, in one portal" intro="Sign in once to manage orders, inventory and deliveries.">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-px sm:grid-cols-2 lg:grid-cols-4 bg-line border border-line">
         {portalFeatures.map((f) => (
-          <div key={f.title} className="rounded-lg bg-surface p-6">
-            <div className="text-sm font-bold text-accent">✓</div>
-            <h3 className="mt-1 text-lg font-semibold text-ink">{f.title}</h3>
-            <p className="mt-2 text-body">{f.text}</p>
+          <div key={f.title} className="bg-white p-7">
+            <div className="text-lg text-stone-400">✓</div>
+            <h3 className="mt-3 text-base font-semibold text-ink">{f.title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-body">{f.text}</p>
           </div>
         ))}
       </div>
-      <a href={PORTAL_LOGIN_URL} className="mt-8 inline-block rounded bg-accent px-6 py-3 font-semibold text-white hover:bg-secondary">Portal login</a>
+      <a href={PORTAL_LOGIN_URL} className="mt-10 inline-block border border-stone-900 px-8 py-3 text-xs uppercase tracking-widest font-medium text-stone-900 hover:bg-stone-900 hover:text-white transition-colors">Portal login</a>
     </Section>
   )
 }
