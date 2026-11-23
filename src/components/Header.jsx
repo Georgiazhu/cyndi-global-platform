@@ -12,7 +12,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-4 text-sm">
           <a href={PORTAL_LOGIN_URL} className="hidden font-medium text-ink transition-colors hover:text-oat sm:block">Portal login</a>
-          <a href={QUOTE_URL} className="rounded-full bg-fire px-6 py-2.5 font-semibold text-white shadow-sm transition-colors hover:bg-fire-dark">Get a quote</a>
+          <a href={QUOTE_URL} className="rounded-full bg-ink px-6 py-2.5 font-semibold text-white shadow-sm transition-colors hover:bg-black">Get a quote</a>
         </div>
       </div>
     </header>
