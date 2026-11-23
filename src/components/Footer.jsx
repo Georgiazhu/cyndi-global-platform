@@ -1,0 +1,20 @@
+import { PORTAL_LOGIN_URL, QUOTE_URL } from '../content.js'
+
+export default function Footer() {
+  return (
+    <footer className="bg-deepbg text-light">
+      <div className="mx-auto max-w-6xl px-6 py-12 flex flex-col md:flex-row justify-between gap-8 text-sm">
+        <div>
+          <div className="text-white text-lg font-bold">Cyndi Global</div>
+          <p className="mt-2 max-w-sm">Luxury swag for brands, anywhere in the world.</p>
+          <p className="mt-2 text-muted">Hong Kong</p>
+        </div>
+        <div className="flex gap-10">
+          <a href={PORTAL_LOGIN_URL} className="hover:text-white">Portal login</a>
+          <a href={QUOTE_URL} className="hover:text-white">Get a quote</a>
+          <a href="/catalog/logistics.html" className="hover:text-white">Track a shipment</a>
+        </div>
+      </div>
+    </footer>
+  )
+}

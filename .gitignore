@@ -1,0 +1,40 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# build output
+dist/
+build/
+out/
+.vite/
+
+# environment / secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# local tooling / caches
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+.cache/
+.tmp/
+*.local
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# test / coverage
+coverage/
+.playwright/
+playwright-report/
+
+# cloudflare / wrangler local state
+.wrangler/
+.dev.vars*
