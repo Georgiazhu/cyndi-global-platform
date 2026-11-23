@@ -1,10 +1,11 @@
 import { PORTAL_LOGIN_URL, QUOTE_URL } from '../content.js'
+import DottedGlobe from '../components/DottedGlobe.jsx'
 
 export default function Hero() {
   return (
     <section id="top" className="hero-wash relative overflow-hidden">
-      {/* dotted grid decoration */}
-      <div className="dot-grid pointer-events-none absolute inset-y-0 right-0 w-1/2 text-fire/25" aria-hidden="true" />
+      {/* animated dotted world map (cardless-style) */}
+      <DottedGlobe className="pointer-events-none absolute inset-y-0 right-0 w-full md:w-3/5 opacity-80" />
       <div className="relative mx-auto max-w-7xl px-6 py-28 md:py-40">
         <p className="text-xs font-semibold uppercase tracking-[0.25em] text-fire">Global swag supply chain</p>
         <h1 className="mt-7 max-w-5xl text-5xl font-bold leading-[1.05] tracking-tight text-ink md:text-7xl lg:text-[5.5rem]">
