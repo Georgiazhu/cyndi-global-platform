@@ -6,6 +6,8 @@ export default {
       colors: {
         // Pantone Dragon Fire brand color
         fire: '#E2501D',
+        oat: '#8C7B66',
+        'oat-soft': '#F5F1EA',
         'fire-dark': '#C44316',
         'fire-soft': '#FCEFE8',   // soft orange surface
         'fire-tint': '#FFF7F3',   // hero gradient start
