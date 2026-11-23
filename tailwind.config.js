@@ -1,14 +1,25 @@
-/** Monochrome / minimal palette, matched to www.cyndiglobal.com (stone grey + black, no color). */
+/** Cyndi Global brand palette — Pantone Dragon Fire (#E2501D) + brand grey (#474747). */
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
-        accent: '#1c1917', deep: '#1c1917', light: '#a8a29e',
-        ink: '#1c1917', secondary: '#57534e', body: '#57534e', muted: '#a8a29e',
-        surface: '#f5f5f4', line: '#e7e5e4', deepbg: '#1c1917',
-        // Brand-blue hero / final CTA / footer (restored from original design)
-        'brand-blue': '#5A7CB7', 'brand-deep': '#141E28', 'brand-light': '#B5C4DF',
+        // Pantone Dragon Fire brand color
+        fire: '#E2501D',
+        'fire-dark': '#C44316',
+        'fire-soft': '#FCEFE8',   // soft orange surface
+        'fire-tint': '#FFF7F3',   // hero gradient start
+        'brand-gray': '#474747',  // logo wordmark grey
+        // Semantic tokens
+        ink: '#1A1A1A',
+        secondary: '#5B5652',
+        body: '#5B5652',
+        muted: '#96908A',
+        surface: '#F7F5F2',
+        line: '#E9E4DE',
+        deepbg: '#1A1A1A',
+        // Legacy aliases kept so any lingering utilities still resolve
+        accent: '#E2501D', deep: '#1A1A1A', light: '#96908A',
       },
       fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
     },

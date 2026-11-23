@@ -4,3 +4,16 @@
 
 body { @apply font-sans text-body bg-white antialiased; font-feature-settings: 'tnum'; }
 html { scroll-behavior: smooth; }
+
+/* Cardless-style dotted grid decoration */
+.dot-grid {
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+/* Soft warm radial wash used behind the hero */
+.hero-wash {
+  background:
+    radial-gradient(60% 80% at 85% 20%, rgba(226,80,29,0.10) 0%, transparent 60%),
+    radial-gradient(50% 60% at 10% 90%, rgba(226,80,29,0.06) 0%, transparent 60%),
+    linear-gradient(180deg, #FFF7F3 0%, #FFFFFF 100%);
+}

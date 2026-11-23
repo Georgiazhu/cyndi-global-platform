@@ -1,17 +1,18 @@
 import { nav, PORTAL_LOGIN_URL, QUOTE_URL } from '../content.js'
 
-// Restored original design: simple light header with brand-blue quote button.
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
-      <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-        <a href="#top" className="text-xl font-bold text-ink">Cyndi Global</a>
-        <nav className="hidden md:flex gap-8 text-sm text-secondary">
-          {nav.map((n) => <a key={n.href} href={n.href} className="hover:text-brand-blue">{n.label}</a>)}
+    <header className="sticky top-0 z-40 border-b border-line bg-white/90 backdrop-blur-md">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+        <a href="#top" aria-label="Cyndi Global home">
+          <img src="/cyndi-logo-full.png" alt="Cyndi Global" className="h-8 w-auto" />
+        </a>
+        <nav className="hidden items-center gap-9 text-sm font-medium text-secondary md:flex">
+          {nav.map((n) => <a key={n.href} href={n.href} className="transition-colors hover:text-fire">{n.label}</a>)}
         </nav>
-        <div className="flex items-center gap-3 text-sm">
-          <a href={PORTAL_LOGIN_URL} className="text-secondary hover:text-brand-blue">Portal login</a>
-          <a href={QUOTE_URL} className="rounded bg-brand-blue px-4 py-2 font-semibold text-white hover:opacity-90">Get a quote</a>
+        <div className="flex items-center gap-4 text-sm">
+          <a href={PORTAL_LOGIN_URL} className="hidden font-medium text-ink transition-colors hover:text-fire sm:block">Portal login</a>
+          <a href={QUOTE_URL} className="rounded-full bg-fire px-6 py-2.5 font-semibold text-white shadow-sm transition-colors hover:bg-fire-dark">Get a quote</a>
         </div>
       </div>
     </header>
