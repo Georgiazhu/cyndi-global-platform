@@ -14,7 +14,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-line bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <a href="#top" aria-label="Cyndi Global home" className="flex items-center overflow-hidden">
-          <img src="/cyndi-logo-mark.png" alt="" className="h-8 w-auto shrink-0" />
+          <img src="/cyndi-logo-mark-v5.png" alt="" className="h-8 w-auto shrink-0" />
           <span
             className="inline-flex items-center overflow-hidden whitespace-nowrap motion-reduce:transition-none transition-[max-width,opacity,transform] duration-[450ms] ease-[cubic-bezier(.65,0,.35,1)]"
             style={{
@@ -24,7 +24,7 @@ export default function Header() {
               transformOrigin: 'left center',
             }}
           >
-            <img src="/cyndi-logo-word.png" alt="" className="h-8 w-auto" />
+            <img src="/cyndi-logo-word-v5.png" alt="" className="h-8 w-auto" />
           </span>
         </a>
         <nav className="hidden items-center gap-9 text-sm font-medium text-secondary md:flex">
